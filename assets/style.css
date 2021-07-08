@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*____________________Styling Header____________________*/
+header{
+    background-color: #48c5ce;
+    color: white;
+    text-align: center;
+    height: 20%;
+    
+    font-size: 12px;
+    padding: 10px;
+}
+/*____________________Styling Main____________________*/
+main{
+    background-image: url(./images/people.jpg);
+    padding: 20px;
+    background-size: cover;
+    height: 60%;
+    
+    text-shadow: 0px 0px 20px
+}
+.side-container{
+    background-color: #FFFFFFBB;
+    padding: 20px;
+    border-radius: 5px;
+    
+    text-align: center;
+    font-size: 15px;
+}
+main h2, p{
+    margin-bottom: 10px;
+}
+input, select{
+    margin-top: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 5px 10px 18px #888888;
+}
+#button{
+    background-color: #48c5ce;
+    color: white;
+    font-size: 1.2em;
+    box-shadow: 5px 10px 18px #888888;
+}
+#button:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    transform: translateY(-2px);
+}
+/*____________________Styling Footer____________________*/
+footer{
+    background-color: #202121;
+    padding: 30px;
+    color: white;
+}
+footer img{
+    width: 60%;
+    height: 40%;
+    margin-left: 20%;
+}
+.text{
+    padding: 5px;
+    text-align: justify;
+}
+
+/*____________________Responsive____________________*/
+@media screen and (min-width: 720px){
+    .side-container{
+        width: 40%;
+        margin-left: 55%;
+    }
+    footer{
+        text-align: center;
+    }
+    footer img{
+        width: 10em;
+    }
+    .texts{
+        display: inline-block;
+        text-align: left;
+        margin-left: 40px;
+        max-width: 40%;
+    }
+}
+@media screen and (min-width: 800px){
+    .side-container{
+        width: 30%;
+        margin-left: 65%;
+    }
+}
+@media screen and (min-width: 1000px){
+    .container{
+        max-width: 1000px;
+        margin: auto;
+    }
+    .side-container{
+        width: 30%;
+        margin-left: 60%;
+    }
+}
+
